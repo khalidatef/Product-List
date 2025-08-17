@@ -1,0 +1,66 @@
+<section>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        @if(product){
+        <div class="card">
+          <div class="card-header">
+            <h2 class="text-center text-primary">{{ product.name }}</h2>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <h5 class="card-title">Product Details</h5>
+                <p class="card-text">
+                  <strong>Name:</strong> {{ product.name }}
+                </p>
+                <p class="card-text">
+                  <strong>Price:</strong>
+                  <span class="text-success fw-bold">{{
+                    product.price | currency
+                  }}</span>
+                </p>
+                <p class="card-text">
+                  <strong>Category:</strong> {{ product.category | titlecase }}
+                </p>
+                <p class="card-text"><strong>Description:</strong></p>
+                <p class="card-text">{{ product.description }}</p>
+              </div>
+              <div class="col-md-6">
+                <div class="text-center">
+                  <div class="bg-light p-4 rounded">
+                    <h6>Product ID: {{ product.id }}</h6>
+                    <p class="text-muted">
+                      This is a detailed view of the selected product.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-4">
+              <button
+                class="btn btn-secondary me-2"
+                [routerLink]="['/category', categoryName]"
+              >
+                Back to {{ categoryName | titlecase }}
+              </button>
+              <button class="btn btn-primary" routerLink="/">
+                Back to Categories
+              </button>
+            </div>
+          </div>
+        </div>
+        }@else {
+        <div class="text-center text-danger">Product Not Found</div>
+        <span class="text-muted"
+          >The requested product could not be found.</span
+        >
+        <button class="btn btn-secondary" routerLink="/">Back To Books</button>
+        <button class="btn btn-primary" routerLink="category">
+          Back To Categories
+        </button>
+        }
+      </div>
+    </div>
+  </div>
+</section>
