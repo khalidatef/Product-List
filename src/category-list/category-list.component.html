@@ -28,7 +28,12 @@
             <p class="card-text">{{ product.description }}</p>
             <button
               class="btn btn-primary"
-              [routerLink]="['/category', categoryName, 'product', product.id]"
+              [routerLink]="[
+                '/category',
+                product.category,
+                'product',
+                product.id
+              ]"
             >
               View Details
             </button>

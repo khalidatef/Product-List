@@ -51,14 +51,20 @@
           </div>
         </div>
         }@else {
-        <div class="text-center text-danger">Product Not Found</div>
-        <span class="text-muted"
-          >The requested product could not be found.</span
-        >
-        <button class="btn btn-secondary" routerLink="/">Back To Books</button>
-        <button class="btn btn-primary" routerLink="category">
-          Back To Categories
-        </button>
+        <div class="text-center text-danger">
+          <h3>Product Not Found</h3>
+          <span class="text-muted"
+            >The requested product could not be found.</span
+          >
+          <div class="mt-4 d-flex justify-content-center gap-2">
+            <button class="btn btn-secondary" routerLink="/">
+              Back To {{ categoryName | titlecase }}
+            </button>
+            <button class="btn btn-primary" routerLink="category">
+              Back To Categories
+            </button>
+          </div>
+        </div>
         }
       </div>
     </div>
