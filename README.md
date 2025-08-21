@@ -1,27 +1,25 @@
-# MyKhalid
+# Product-List
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+## 📌 Overview
+Product-List is a simple **Angular-based web application** designed to display and manage a list of products.  
+The project demonstrates the core concepts of **front-end development** such as component-based architecture, data binding, routing, and responsive design.  
+It is a great starting point for learning and practicing **Angular, TypeScript, and modern web development workflows**.  
 
-## Development server
+## ✨ Features
+- Display a list of products with essential details.  
+- View product categories and navigate between them.  
+- Responsive UI built with **Bootstrap** for a smooth user experience.  
+- Component-based structure following Angular best practices.  
+- Easy to extend with additional functionality (e.g., search, filter, product details).  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠️ Tech Stack
+- **Angular**  
+- **TypeScript**  
+- **HTML5 / CSS3**  
+- **Bootstrap**  
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🚀 Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/khalidatef/Product-List.git
+   cd Product-List
